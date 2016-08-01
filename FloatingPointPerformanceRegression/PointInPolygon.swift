@@ -51,7 +51,7 @@ func pip(
       // Check collinearity; gives a false negative if (`px`, `py`) or
       // (`cx`, `cy`) is at the origin, but that case is handled below
       if test && (pxcy == cxpy) {
-        // It's already the case that `r[idx - offset] == 1`
+        // It's already the case that `r[idx] == 1`
         continue outer
       }
 
